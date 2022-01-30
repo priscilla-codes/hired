@@ -66,4 +66,85 @@ body {
 
 body {
   font-style: normal;
+  font-size: 1.2rem;
+}
+
+/** NAV **/
+.nav {
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  .logo {
+    width: 113px;
+    height: 35px;
+  }
+
+  .toggle-icon {
+    width: auto;
+  }
+
+  img {
+    max-width: 100%;
+    font-style: italic;
+    vertical-align: middle;
+  }
+
+  .jobseeker-dropdown,
+  .employer-dropdown {
+    span {
+      color: #0c0c0c;
+      padding-right: 5px;
+      display: block;
+    }
+  }
+
+  .centered-nav {
+    display: flex;
+    width: 74rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-nav {
+      flex: 1 0;
+    }
+
+    .right-nav__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+
+      li:not(:first-child) {
+        margin: 0 0 0 40px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.6rem 0.5rem;
+        color: #fff;
+
+        &:link {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .log-in-link {
+      a {
+        color: #6e5aea;
+      }
+    }
+    .sign-up-link {
+      padding: 10px 35px;
+      height: 50px;
+      background-color: #6e5aea;
+      border-radius: 0.5rem;
+    }
+  }
 }

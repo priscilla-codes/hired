@@ -1,0 +1,175 @@
+/** RESET **/
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+em,
+img,
+small,
+strike,
+strong,
+b,
+u,
+i,
+center,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+ul,
+nav,
+input,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+/** NAV **/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav .logo {
+  width: 113px;
+  height: 35px;
+}
+
+.nav .toggle-icon {
+  width: auto;
+}
+
+.nav img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+.nav .jobseeker-dropdown span,
+.nav .employer-dropdown span {
+  color: #0c0c0c;
+  padding-right: 5px;
+  display: block;
+}
+
+.nav .centered-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 74rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .centered-nav .left-nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+.nav .centered-nav .right-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.nav .centered-nav .right-nav__items li:not(:first-child) {
+  margin: 0 0 0 40px;
+}
+
+.nav .centered-nav .right-nav__items a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.6rem 0.5rem;
+  color: #fff;
+}
+
+.nav .centered-nav .right-nav__items a:link {
+  text-decoration: none;
+}
+
+.nav .centered-nav .log-in-link a {
+  color: #6e5aea;
+}
+
+.nav .centered-nav .sign-up-link {
+  padding: 10px 35px;
+  height: 50px;
+  background-color: #6e5aea;
+  border-radius: 0.5rem;
+}
+/*# sourceMappingURL=styles.css.map */

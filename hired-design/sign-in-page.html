@@ -9,7 +9,13 @@
       integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="main-wrapper">
@@ -17,23 +23,38 @@
         <div class="centered-nav">
           <div class="left-nav">
             <div class="brand">
-              <span class="brand-name">Hired</span
-              ><span class="brand-end-underscore"></span>
+              <span class="brand-name"
+                ><img alt="Hired" class="logo" src="./images/logo.svg"
+              /></span>
             </div>
           </div>
           <div class="right-nav">
             <ul class="right-nav__items">
-              <li class="right-nav__item">
-                <a class="employer-dropdown">Hired Talent</a>
+              <li class="right-nav__item employer-dropdown">
+                <a href="#">
+                  <span>Hire Talent</span>
+                  <img
+                    alt="Hired"
+                    class="toggle-icon"
+                    src="./images/toggle-icon.svg"
+                  />
+                </a>
               </li>
-              <li class="right-nav__item">
-                <a class="jobseeker-dropdown">Find a Job</a>
+              <li class="right-nav__item jobseeker-dropdown">
+                <a href="#">
+                  <span>Find a Job</span>
+                  <img
+                    alt="Hired"
+                    class="toggle-icon"
+                    src="./images/toggle-icon.svg"
+                  />
+                </a>
               </li>
-              <li class="right-nav__item">
-                <a class="log-in-link">Log In</a>
+              <li class="right-nav__item log-in-link">
+                <a href="#">Log In</a>
               </li>
-              <li class="right-nav__item">
-                <a class="sign-up-link">Get Started</a>
+              <li class="right-nav__item sign-up-link">
+                <a href="#">Get Started</a>
               </li>
             </ul>
           </div>
