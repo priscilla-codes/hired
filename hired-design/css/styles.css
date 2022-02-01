@@ -1,3 +1,272 @@
+.main-content .form-wrapper {
+  width: 74rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4f7;
+}
+
+.main-content .form-wrapper form {
+  width: 41%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #6e5aea;
+}
+
+.main-content .form-wrapper form .form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.2rem 4rem 0.9rem 4rem;
+  font-weight: bold;
+  color: #0c0c0c;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content .form-wrapper form .form-bottom-content {
+  padding: 0 4rem 2.3rem 4rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__header {
+  font-size: 1rem;
+  padding-bottom: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link {
+  background-color: yellow;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-bottom: 0.5rem;
+  padding-top: 0.6rem;
+  border-radius: 2px;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link a {
+  text-decoration: none;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.facebook-sign-in {
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #43639a;
+  border-color: #43639a;
+  color: #fff;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.facebook-sign-in .social-icon {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.github-sign-in {
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0.7rem;
+  background-color: #444454;
+  border-color: #444454;
+  color: #fff;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.github-sign-in .social-icon {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.google-sign-in {
+  background-color: #fff;
+  font-family: 'Arimo', sans-serif;
+  border: 0.1rem solid #c9cbce;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.google-sign-in img {
+  padding-left: 1.3rem;
+  padding-right: 0.9rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.google-sign-in a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5rem rem;
+  min-width: 121px;
+  background-color: #fff;
+  border-color: #c9cbce;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+}
+
+.main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.google-sign-in .google-sign-in__text {
+  font-size: 1rem;
+  padding: 0.5rem;
+  letter-spacing: 0.02rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.3rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-content .form-wrapper form .form-bottom-content .field input {
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #323241;
+  border: 1px solid #737479;
+  border-radius: 0.2rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content .field label {
+  color: #0c0c0c;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions .forgot-password {
+  font-size: 0.7rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions .forgot-password a {
+  text-decoration: none;
+  color: #6e5aea;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions .user-remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions .user-remember-me input[type='checkbox'] {
+  width: 14px;
+  height: 14px;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions .user-remember-me label {
+  color: #797676;
+  font-size: 1rem;
+  font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.main-content .form-wrapper form .form-bottom-content .actions .user-remember-me .user-remember-me__checkbox {
+  min-width: 22px;
+  min-height: 22px;
+  margin: 0.1rem 0.6rem 0.1rem 0;
+  border: 1px solid #737479;
+  border-radius: 0.2rem;
+}
+
+.main-content .form-wrapper form .form-bottom-content button {
+  font-weight: 700;
+  background-color: #6e5aea;
+  border: 1px solid #6e5aea;
+  border-radius: 9px;
+  padding: 0.7rem 1.4rem;
+  color: #fff;
+}
+
+.main-content .create-account {
+  width: 41%;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-content .create-account a {
+  text-decoration: none;
+  padding-left: 0.3rem;
+  color: #2a15a9;
+  font-weight: 400;
+}
+
+.main-content .create-account span {
+  color: #595a60;
+  font-weight: 300;
+}
+
 /** RESET **/
 html,
 body,
@@ -5,6 +274,8 @@ div,
 span,
 h1,
 h2,
+h3,
+h5,
 p,
 a,
 em,
@@ -69,6 +340,20 @@ body {
 body {
   font-style: normal;
   font-size: 1.2rem;
+}
+
+.main-wrapper {
+  background-color: #f5f4f7;
+}
+
+.main-wrapper .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
 }
 
 /** NAV **/
@@ -171,5 +456,10 @@ body {
   height: 50px;
   background-color: #6e5aea;
   border-radius: 0.5rem;
+}
+
+/** FOOTER **/
+.footer-wrapper {
+  background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */

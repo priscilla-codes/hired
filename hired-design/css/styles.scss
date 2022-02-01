@@ -1,3 +1,5 @@
+@import 'sign-in-page.scss';
+
 /** RESET **/
 html,
 body,
@@ -5,6 +7,8 @@ div,
 span,
 h1,
 h2,
+h3,
+h5,
 p,
 a,
 em,
@@ -67,6 +71,15 @@ body {
 body {
   font-style: normal;
   font-size: 1.2rem;
+}
+
+.main-wrapper {
+  background-color: #f5f4f7;
+  .main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
 }
 
 /** NAV **/
@@ -147,4 +160,9 @@ body {
       border-radius: 0.5rem;
     }
   }
+}
+
+/** FOOTER **/
+.footer-wrapper {
+  background-color: red;
 }

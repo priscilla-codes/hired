@@ -15,6 +15,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -63,8 +75,64 @@
       <div class="main-content">
         <div class="form-wrapper">
           <form>
-            <h1>Login</h1>
+            <div class="form-header">
+              <h3>Log In</h1>
+            </div>
+            <div class="form-bottom-content">
+              <div class="social-login">
+                <div class="social-login__header">
+                  <h5>Log in to Hired with...</h5>
+                </div>
+                <div class="social-login__links">
+                  <div class="facebook-sign-in social-login-link">
+                    <a href="#">
+                      <i class="fab fa-facebook-f social-icon"></i>
+                    </a>
+                  </div>
+                  <div class="github-sign-in social-login-link">
+                    <a href="#">
+                      <i class="fab fa-github social-icon"></i>
+                    </a>
+                  </div>
+                  <div class="google-sign-in social-login-link">
+                    <a href="#">
+                      <img alt="Google Sign In" class="logo" src="./images/google.svg"/>
+                      <span class="google-sign-in__text">Google</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                  <label>Email</label>
+                <input class="input-field" autocomplete="off" type="email"  id="user-email" />
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input class="input-field" autocomplete="off" type="password" id="user-password" />
+              </div>
+              <div class="actions">
+                <div class="user-remember-me">
+                  <input
+                    class="user-remember-me__checkbox"
+                    type="checkbox"
+                    value="1"
+                    id="user-remember-me"
+                  />
+                  <label for="user-remember-me">Remember me</label><br />
+                </div>
+                <div class="forgot-password">
+                  <a href="#" class="forgot-password-link"
+                    >Don't know your password?</a
+                  >
+                </div>
+              </div>
+              <button class="button sign-in-button">Sign In</button>
+            </div>
           </form>
+          <div class="create-account">
+            <span>Don't have an account? </span>
+            <a href="#">Apply now!</a>
+          </div>
         </div>
       </div>
       <div class="footer-wrapper">
