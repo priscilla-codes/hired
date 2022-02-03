@@ -8,6 +8,7 @@ span,
 h1,
 h2,
 h3,
+h4,
 h5,
 p,
 a,
@@ -68,12 +69,23 @@ body {
   height: 100%;
 }
 
+html {
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-style: normal;
   font-size: 1.2rem;
 }
 
 .main-wrapper {
+  flex-grow: 1;
   background-color: #f5f4f7;
   .main-content {
     display: flex;
@@ -164,5 +176,109 @@ body {
 
 /** FOOTER **/
 .footer-wrapper {
-  background-color: red;
+  background-color: #180c60;
+  display: flex;
+  justify-content: center;
+
+  .footer-content {
+    width: 74rem;
+    padding: 5.4rem 0 2.6rem 0;
+
+    a {
+      text-decoration: none;
+      font-family: Roboto, sans-serif;
+    }
+
+    .footer-branding {
+      img {
+        max-width: 100%;
+        font-style: italic;
+        vertical-align: middle;
+      }
+    }
+
+    .footer-menu {
+      display: flex;
+
+      .footer-branding {
+        display: flex;
+
+        .left-branding-icon {
+          height: 3rem;
+          width: 3rem;
+          border-right: solid 1px #47249b;
+          padding-right: 0.6rem;
+          margin-right: 0.6rem;
+          display: flex;
+          align-items: center;
+        }
+        .footer-logo {
+          padding-top: 0.7rem;
+
+          img {
+            height: 1.5rem;
+          }
+        }
+      }
+
+      .footer-social-links {
+        padding-top: 1.2rem;
+        a {
+          &:not(:first-child) {
+            margin-left: 0.4rem;
+          }
+        }
+      }
+
+      .column {
+        flex-basis: 20%;
+
+        .column__header {
+          color: #6e5aea;
+          font-family: 'Poppins', sans-serif;
+          font-size: 0.9rem;
+        }
+        .column__links {
+          margin-top: 1.1rem;
+          a {
+            color: #fff;
+            font-size: 1rem;
+          }
+          li:not(:first-child) {
+            margin-top: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      background-color: #180c60;
+      margin-top: 8.6rem;
+      color: #6e5aea;
+      font-size: 0.8rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+
+      .bottom-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .bottom-right {
+        .bottom-right__links {
+          display: flex;
+
+          a {
+            color: #6e5aea;
+          }
+
+          li:not(:first-child) {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
 }
