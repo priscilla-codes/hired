@@ -1,3 +1,4 @@
+@import 'mixins.scss';
 @import 'sign-in-page.scss';
 
 /** RESET **/
@@ -91,6 +92,9 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
+    @include respond(max-767px) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -128,8 +132,9 @@ body {
 
   .centered-nav {
     display: flex;
-    width: 74rem;
+    width: 72rem;
     justify-content: space-between;
+    transition: width 0.4s ease-in-out;
     align-items: center;
 
     .left-nav {
@@ -158,6 +163,20 @@ body {
           text-decoration: none;
         }
       }
+
+      @include respond(max-990px) {
+        display: none;
+      }
+    }
+    .navbar-toggle {
+      color: #514e4e;
+
+      @include respond(min-991px) {
+        display: none;
+      }
+      .fa-bars {
+        font-size: 2.5rem;
+      }
     }
 
     .log-in-link {
@@ -171,6 +190,18 @@ body {
       background-color: #6e5aea;
       border-radius: 0.5rem;
     }
+
+    @include respond(tab-land) {
+      width: 60rem;
+    }
+    @include respond(max-990px) {
+      width: 100%;
+    }
+  }
+
+  @include respond(max-990px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -181,7 +212,7 @@ body {
   justify-content: center;
 
   .footer-content {
-    width: 74rem;
+    width: 72rem;
     padding: 5.4rem 0 2.6rem 0;
 
     a {
@@ -243,11 +274,41 @@ body {
           a {
             color: #fff;
             font-size: 1rem;
+
+            @include respond(max-767px) {
+              font-size: 0.9rem;
+            }
           }
           li:not(:first-child) {
             margin-top: 1.4rem;
           }
         }
+
+        &:first-child {
+          .footer-branding {
+            @include respond(max-990px) {
+              flex-basis: 50%;
+            }
+          }
+          @include respond(max-990px) {
+            flex-basis: 100%;
+            display: flex;
+            margin-bottom: 3.1rem;
+          }
+        }
+
+        @include respond(max-990px) {
+          flex-basis: 50%;
+          margin-top: 2rem;
+        }
+
+        @include respond(max-767px) {
+          margin-top: 2rem;
+        }
+      }
+
+      @include respond(max-990px) {
+        flex-wrap: wrap;
       }
     }
 
@@ -279,6 +340,29 @@ body {
           }
         }
       }
+
+      @include respond(max-767px) {
+        margin-top: 5.1 rem;
+      }
+    }
+
+    @include respond(tab-land) {
+      width: 60rem;
+    }
+
+    @include respond(max-990px) {
+      width: 46rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @include respond(max-800px) {
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+    }
+
+    @include respond(max-767px) {
+      width: 100%;
     }
   }
 }

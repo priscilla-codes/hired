@@ -1,6 +1,6 @@
 .main-content {
   .form-wrapper {
-    width: 74rem;
+    width: 72rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +20,10 @@
         color: #0c0c0c;
         font-size: 1.5rem;
         font-family: 'Poppins', sans-serif;
+
+        @include respond(max-767px) {
+          padding-top: 2rem;
+        }
       }
 
       .form-bottom-content {
@@ -36,6 +40,10 @@
             font-size: 1rem;
             padding-bottom: 1.4rem;
             font-family: 'Roboto', sans-serif;
+
+            @include respond(max-667px) {
+              padding-bottom: 1.3rem;
+            }
           }
 
           .social-login__links {
@@ -111,6 +119,19 @@
                   padding: 0.5rem;
                   letter-spacing: 0.02rem;
                 }
+
+                span {
+                  @include respond(max-767px) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 38%;
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+
+              @include respond(max-767px) {
+                padding-bottom: 0.3rem;
               }
             }
           }
@@ -128,6 +149,10 @@
             color: #323241;
             border: 1px solid #737479;
             border-radius: 0.2rem;
+
+            @include respond(max-767px) {
+              padding: 0.7rem;
+            }
           }
 
           label {
@@ -189,7 +214,28 @@
           padding: 0.7rem 1.4rem;
           color: #fff;
         }
+
+        @include respond(max-767px) {
+          width: 100%;
+          padding: 0 1.2rem 2.3rem 1.2rem;
+        }
       }
+
+      @include respond(tab-land) {
+        width: 48%;
+      }
+
+      @include respond(max-990px) {
+        width: 30rem;
+      }
+
+      @include respond(max-767px) {
+        width: 100%;
+      }
+    }
+
+    @include respond(tab-land) {
+      width: 60rem;
     }
   }
 
@@ -211,6 +257,14 @@
     span {
       color: #595a60;
       font-weight: 300;
+    }
+
+    @include respond(tab-land) {
+      width: 48%;
+    }
+
+    @include respond(max-767px) {
+      width: 100%;
     }
   }
 }
