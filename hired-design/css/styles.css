@@ -1,11 +1,13 @@
 /*
 $breakpoint argument choices:
 
+- tab-land           [991-1199]
+
 1em = 16px
 
 */
 .main-content .form-wrapper {
-  width: 74rem;
+  width: 72rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +40,12 @@ $breakpoint argument choices:
   color: #0c0c0c;
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 47.9375em) {
+  .main-content .form-wrapper form .form-header {
+    padding-top: 2rem;
+  }
 }
 
 .main-content .form-wrapper form .form-bottom-content {
@@ -160,6 +168,21 @@ $breakpoint argument choices:
   letter-spacing: 0.02rem;
 }
 
+@media (max-width: 47.9375em) {
+  .main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link.google-sign-in span {
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .main-content .form-wrapper form .form-bottom-content .social-login .social-login__links .social-login-link {
+    padding-bottom: 0.3rem;
+  }
+}
+
 .main-content .form-wrapper form .form-bottom-content .field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +201,12 @@ $breakpoint argument choices:
   color: #323241;
   border: 1px solid #737479;
   border-radius: 0.2rem;
+}
+
+@media (max-width: 47.9375em) {
+  .main-content .form-wrapper form .form-bottom-content .field input {
+    padding: 0.7rem;
+  }
 }
 
 .main-content .form-wrapper form .form-bottom-content .field label {
@@ -248,6 +277,37 @@ $breakpoint argument choices:
   color: #fff;
 }
 
+@media (max-width: 47.9375em) {
+  .main-content .form-wrapper form .form-bottom-content {
+    width: 100%;
+    padding: 0 1.2rem 2.3rem 1.2rem;
+  }
+}
+
+@media (min-width: 61.9375em) and (max-width: 74.9375em) {
+  .main-content .form-wrapper form {
+    width: 48%;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .main-content .form-wrapper form {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .main-content .form-wrapper form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 61.9375em) and (max-width: 74.9375em) {
+  .main-content .form-wrapper {
+    width: 60rem;
+  }
+}
+
 .main-content .create-account {
   width: 41%;
   padding: 2rem 0;
@@ -271,6 +331,18 @@ $breakpoint argument choices:
 .main-content .create-account span {
   color: #595a60;
   font-weight: 300;
+}
+
+@media (min-width: 61.9375em) and (max-width: 74.9375em) {
+  .main-content .create-account {
+    width: 48%;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .main-content .create-account {
+    width: 100%;
+  }
 }
 
 /** RESET **/
@@ -381,6 +453,12 @@ body {
   margin-top: 2.5rem;
 }
 
+@media (max-width: 47.9375em) {
+  .main-wrapper .main-content {
+    margin-top: 0;
+  }
+}
+
 /** NAV **/
 .nav {
   display: -webkit-box;
@@ -421,10 +499,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 74rem;
+  width: 72rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -472,6 +552,26 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 61.875em) {
+  .nav .centered-nav .right-nav__items {
+    display: none;
+  }
+}
+
+.nav .centered-nav .navbar-toggle {
+  color: #514e4e;
+}
+
+@media (min-width: 61.9375em) {
+  .nav .centered-nav .navbar-toggle {
+    display: none;
+  }
+}
+
+.nav .centered-nav .navbar-toggle .fa-bars {
+  font-size: 2.5rem;
+}
+
 .nav .centered-nav .log-in-link a {
   color: #6e5aea;
 }
@@ -481,6 +581,25 @@ body {
   height: 50px;
   background-color: #6e5aea;
   border-radius: 0.5rem;
+}
+
+@media (min-width: 61.9375em) and (max-width: 74.9375em) {
+  .nav .centered-nav {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .nav .centered-nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /** FOOTER **/
@@ -495,7 +614,7 @@ body {
 }
 
 .footer-wrapper .footer-content {
-  width: 74rem;
+  width: 72rem;
   padding: 5.4rem 0 2.6rem 0;
 }
 
@@ -572,8 +691,53 @@ body {
   font-size: 1rem;
 }
 
+@media (max-width: 47.9375em) {
+  .footer-wrapper .footer-content .footer-menu .column .column__links a {
+    font-size: 0.9rem;
+  }
+}
+
 .footer-wrapper .footer-content .footer-menu .column .column__links li:not(:first-child) {
   margin-top: 1.4rem;
+}
+
+@media (max-width: 61.875em) {
+  .footer-wrapper .footer-content .footer-menu .column:first-child .footer-branding {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .footer-wrapper .footer-content .footer-menu .column:first-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3.1rem;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .footer-wrapper .footer-content .footer-menu .column {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .footer-wrapper .footer-content .footer-menu .column {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .footer-wrapper .footer-content .footer-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer-wrapper .footer-content .footer-bottom {
@@ -612,5 +776,38 @@ body {
 
 .footer-wrapper .footer-content .footer-bottom .bottom-right .bottom-right__links li:not(:first-child) {
   margin-left: 0.5rem;
+}
+
+@media (max-width: 47.9375em) {
+  .footer-wrapper .footer-content .footer-bottom {
+    margin-top: 5.1 rem;
+  }
+}
+
+@media (min-width: 61.9375em) and (max-width: 74.9375em) {
+  .footer-wrapper .footer-content {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 61.875em) {
+  .footer-wrapper .footer-content {
+    width: 46rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 50em) {
+  .footer-wrapper .footer-content {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .footer-wrapper .footer-content {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
