@@ -9,8 +9,8 @@ function App() {
     <>
       <GlobalStyles />
       <MainWrapper>
-        <Navbar></Navbar>
-        <MainContent></MainContent>
+        <Navbar />
+        <MainContent />
       </MainWrapper>
       <Footer />
     </>
