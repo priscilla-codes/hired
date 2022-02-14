@@ -66,7 +66,7 @@ form {
 }
 
 html,
-body {
+body, #root {
   height: 100%;
 }
 
@@ -75,7 +75,7 @@ html {
   overflow-y: scroll;
 }
 
-body {
+body, #root {
   display: flex;
   flex-direction: column;
   font-style: normal;
