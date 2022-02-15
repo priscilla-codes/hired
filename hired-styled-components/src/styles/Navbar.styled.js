@@ -56,6 +56,8 @@ export const Logo = styled.img`
 `;
 
 // Right Nav
+export const RightNav = styled.div``;
+
 export const RightNavItems = styled.ul`
   display: flex;
   justify-content: space-between;
