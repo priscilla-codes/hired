@@ -77,6 +77,9 @@ export default function Footer() {
                 <a href="#">Why Hired</a>
               </li>
               <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
                 <a href="#">Employer Sign Up</a>
               </li>
               <li>
