@@ -114,7 +114,7 @@ export const SocialLinks = styled.div`
   padding-top: 1.2rem;
   a {
     &:not(:first-child) {
-      margin-left: 0.4rem;
+      margin-left: 0.6rem;
     }
   }
 `;
