@@ -185,7 +185,7 @@ export const FormField = styled.div`
     border: 1px solid #737479;
     border-radius: 0.2rem;
 
-    @include respond(max-767px) {
+    @media (max-width: 47.9375em) {
       padding: 0.7rem;
     }
   }

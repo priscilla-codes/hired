@@ -55,7 +55,7 @@ export const Column = styled.div`
       color: #fff;
       font-size: 1rem;
 
-      @include respond(max-767px) {
+      @media (max-width: 47.9375em) {
         font-size: 0.9rem;
       }
     }
