@@ -9,7 +9,12 @@ import {
   SocialLinks,
   FooterBottom,
   Copyright,
-  BottomRightLinks
+  BottomRightLinks,
+  ColumnHeader,
+  ColumnList,
+  ColumnListItem,
+  BottomRightList,
+  BottomRightListItem
 } from '../styles/Footer.styled';
 
 export default function Footer() {
@@ -45,102 +50,102 @@ export default function Footer() {
             </SocialLinks>
           </Column>
           <Column>
-            <h4>Job-Seekers</h4>
-            <ul>
-              <li>
+            <ColumnHeader>Job-Seekers</ColumnHeader>
+            <ColumnList>
+              <ColumnListItem>
                 <a href="#">How Hired Works</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Refer a Friend</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Candidate Sign Up</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Partnerships</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Salary Calculator</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Success Stories</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">FAQ</a>
-              </li>
-            </ul>
+              </ColumnListItem>
+            </ColumnList>
           </Column>
           <Column>
-            <h4>Employers</h4>
-            <ul>
-              <li>
+            <ColumnHeader>Employers</ColumnHeader>
+            <ColumnList>
+              <ColumnListItem>
                 <a href="#">Why Hired</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Pricing</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Employer Sign Up</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Partnerships</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Success Stories</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Talk Talent to Me</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">FAQ</a>
-              </li>
-            </ul>
+              </ColumnListItem>
+            </ColumnList>
           </Column>
           <Column>
-            <h4>Resources</h4>
-            <ul>
-              <li>
+            <ColumnHeader>Resources</ColumnHeader>
+            <ColumnList>
+              <ColumnListItem>
                 <a href="#">Content Hub</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Blog</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Company Directory</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Skills Directory</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Salaries Directory</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Jobs Directory</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Release Notes</a>
-              </li>
-            </ul>
+              </ColumnListItem>
+            </ColumnList>
           </Column>
           <Column>
-            <h4>Company</h4>
-            <ul>
-              <li>
+            <ColumnHeader>Company</ColumnHeader>
+            <ColumnList>
+              <ColumnListItem>
                 <a href="#">Contact Us</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">About Hired</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Diversity</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Careers</a>
-              </li>
-              <li>
+              </ColumnListItem>
+              <ColumnListItem>
                 <a href="#">Press</a>
-              </li>
-            </ul>
+              </ColumnListItem>
+            </ColumnList>
           </Column>
         </FooterMenu>
         <FooterBottom>
@@ -148,17 +153,17 @@ export default function Footer() {
             <span>&#169; 2022 Vettery, Inc. All Rights Reserved.</span>
           </Copyright>
           <BottomRightLinks>
-            <ul>
-              <li>
+            <BottomRightList>
+              <BottomRightListItem>
                 <a href="#">Privacy</a>
-              </li>
-              <li>
+              </BottomRightListItem>
+              <BottomRightListItem>
                 <a href="#">Terms</a>
-              </li>
-              <li>
+              </BottomRightListItem>
+              <BottomRightListItem>
                 <a href="#">Sitemap</a>
-              </li>
-            </ul>
+              </BottomRightListItem>
+            </BottomRightList>
           </BottomRightLinks>
         </FooterBottom>
       </FooterContent>
